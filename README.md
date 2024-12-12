@@ -68,18 +68,18 @@ URL de Conexão: A URL de conexão para o banco de dados MySQL. Exemplo:
 String url = "jdbc:mysql://localhost:3306/sistema_mensagens";
 Usuário: O nome de usuário para acessar o banco de dados. Exemplo:
 
-String usuario = "root";
+String usuario = "Persona";
 Senha: A senha para o usuário do banco de dados. Exemplo:
 
-String senha = "sua_senha";
+String senha = "12345";
 O método conectar() na classe ConexaoBD deve ser configurado da seguinte forma:
 
 
 
 public Connection conectar() throws SQLException {
     String url = "jdbc:mysql://localhost:3306/sistema_mensagens";
-    String usuario = "root";
-    String senha = "sua_senha";
+    String usuario = "persona";
+    String senha = "12345";
     return DriverManager.getConnection(url, usuario, senha);
 }
 Certifique-se de que o servidor MySQL esteja em execução e que o banco de dados sistema_mensagens tenha sido criado antes de executar o programa.
@@ -87,7 +87,7 @@ Certifique-se de que o servidor MySQL esteja em execução e que o banco de dado
 Estrutura do Banco de Dados
 O sistema utiliza as seguintes tabelas:
 
-usuarios: Contém informações dos usuários (CPF, senha, email, nome).
+usuarios: Contém informações dos usuários (Id, senha, email, profissâo).
 mensagens: Armazena as mensagens enviadas (ID da mensagem, conteúdo, data de envio, remetente, destinatário).
 Como Executar o Projeto
 Configure as strings de conexão na classe ConexaoBD com os parâmetros corretos para o seu ambiente.
