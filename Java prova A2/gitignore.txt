@@ -1,0 +1,39 @@
+# Ignorar pastas e arquivos gerados pelo IntelliJ IDEA
+/.idea/
+/*.iml
+
+# Ignorar pastas de saída e compilação
+/target/
+/out/
+
+# Ignorar arquivos de logs
+*.log
+
+# Ignorar configurações locais do Maven
+.mvn/
+
+# Ignorar arquivos de backup
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar caches do IntelliJ
+/.idea/workspace.xml
+/.idea/tasks.xml
+
+# Ignorar arquivos do controle de versão local
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# Ignorar configurações de ambiente
+.env
+
+# Ignorar arquivos de testes temporários
+/test-output/
