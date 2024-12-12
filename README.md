@@ -64,21 +64,18 @@ Configuração de Strings de Conexão
 A configuração correta das strings de conexão é essencial para que o sistema funcione corretamente. O sistema utiliza a classe ConexaoBD para gerenciar a conexão com o banco de dados. Certifique-se de configurar as seguintes informações:
 
 URL de Conexão: A URL de conexão para o banco de dados MySQL. Exemplo:
-java
-Copiar código
+
 String url = "jdbc:mysql://localhost:3306/sistema_mensagens";
 Usuário: O nome de usuário para acessar o banco de dados. Exemplo:
-java
-Copiar código
+
 String usuario = "root";
 Senha: A senha para o usuário do banco de dados. Exemplo:
-java
-Copiar código
+
 String senha = "sua_senha";
 O método conectar() na classe ConexaoBD deve ser configurado da seguinte forma:
 
-java
-Copiar código
+
+
 public Connection conectar() throws SQLException {
     String url = "jdbc:mysql://localhost:3306/sistema_mensagens";
     String usuario = "root";
@@ -96,10 +93,10 @@ Como Executar o Projeto
 Configure as strings de conexão na classe ConexaoBD com os parâmetros corretos para o seu ambiente.
 Certifique-se de que o banco de dados esteja configurado e rodando no MySQL.
 Compile o projeto utilizando Maven:
-bash
-Copiar código
+
+
 mvn clean install
 Execute o programa principal:
-bash
-Copiar código
+
+
 java -jar target/sistema-mensagens.jar
